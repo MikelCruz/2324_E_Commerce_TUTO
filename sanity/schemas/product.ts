@@ -22,12 +22,24 @@ export default {
     {
       name: 'slug',
       type: 'slug',
-      title: 'Product Slug'
+      title: 'Product Slug',
+      options: {
+        source: 'name',
+      }
     },
     {
       name: 'price',
       type: 'number',
       title: 'Price'
+    },{
+      name: 'Category',
+      title: 'Product Category',
+      type: 'reference',
+      to: [
+        {
+          type: 'category',
+        },
+      ],
     },
   ],
 }
