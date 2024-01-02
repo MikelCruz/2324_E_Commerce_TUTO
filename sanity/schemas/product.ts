@@ -6,18 +6,18 @@ export default {
     {
       name: 'name',
       type: 'string',
-      title: 'Name of Product'
+      title: 'Name of Product',
     },
     {
       name: 'images',
       type: 'array',
-      title: 'Product of Images',
+      title: 'Product Images',
       of: [{type: 'image'}],
     },
     {
       name: 'description',
       type: 'text',
-      title: 'Description of product'
+      title: 'Description of product',
     },
     {
       name: 'slug',
@@ -25,14 +25,20 @@ export default {
       title: 'Product Slug',
       options: {
         source: 'name',
-      }
+      },
     },
     {
       name: 'price',
+      title: 'Price',
       type: 'number',
-      title: 'Price'
-    },{
-      name: 'Category',
+    },
+    {
+      name: 'price_id',
+      title: 'Stripe Price ID',
+      type: 'string',
+    },
+    {
+      name: 'category',
       title: 'Product Category',
       type: 'reference',
       to: [

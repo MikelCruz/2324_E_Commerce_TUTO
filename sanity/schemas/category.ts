@@ -5,8 +5,8 @@ export default {
   fields: [
     {
       name: 'name',
+      title: 'Name of Category',
       type: 'string',
-      title: 'Name of Category'
     },
   ],
 }
